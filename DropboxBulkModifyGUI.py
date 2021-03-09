@@ -196,9 +196,7 @@ class ModePage(tk.Frame):
         op1.pack(pady = 5)
         button.pack()
         
-        #Add a dropdown, then do some logic for the delete workflow
-        
-#Treeview selection of Dropbox location of the Child containing folder      
+        #Add a dropdown, then do some logic for the delete workflow 
        
 #Treeview selection of Dropbox location of the content folder     
 class ContentPage(tk.Frame):
@@ -244,8 +242,6 @@ class ChildPage(tk.Frame):
         button1.grid(row = 3, column = 0)
         self.bind('<<ShowFrame>>', lambda e:controller.open_node(treelist, tree, controller.child))
  
-        
-# THIS IS BUGGY AF, likely b/c I'm using lambda wrong
 class SelectionPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
